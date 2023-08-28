@@ -12,9 +12,9 @@ import './index.css';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<RootLayout />}>
-      <Route path="/" element={<div>Home</div>} />
-      <Route path="/about" element={<div>About</div>} />
-      <Route path="/contact" element={<div>Contact</div>} />
+      <Route path="/" element={<div>Dashboard</div>} />
+      <Route path="/accounts" element={<div>Accounts</div>} />
+      <Route path="/sales" element={<div>Sales</div>} />
       <Route path="*" element={<div>Not Found</div>} />
     </Route>
   )
