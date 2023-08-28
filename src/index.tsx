@@ -19,7 +19,13 @@ const router = createBrowserRouter(
     <Route element={<RootLayout />}>
       <Route index element={<DashboardPage />} />
       <Route path="accounts" element={<AccountsPage />} />
-      <Route path="sales" element={<SalesPage />} />
+      <Route path="sales" element={<SalesPage />}>
+        <Route index element={<div>Overview</div>} />
+        <Route path="subscriptions" element={<div>Subscriptions</div>} />
+        <Route path="invoices" element={<div>Invoices</div>} />
+        <Route path="customers" element={<div>Customers</div>} />
+        <Route path="deposits" element={<div>Deposits</div>} />
+      </Route>
       <Route path="expenses" element={<ExpensesPage />} />
       <Route path="reports" element={<ReportsPage />} />
       <Route path="*" element={<div>Not Found</div>} />
