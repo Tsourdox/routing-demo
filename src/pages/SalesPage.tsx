@@ -2,7 +2,7 @@ import { NavLink, NavLinkProps, Outlet } from 'react-router-dom';
 
 export default function SalesPage() {
   return (
-    <div className="flex flex-col p-8">
+    <div className="flex flex-col flex-1 p-8">
       <header className="border-b-2 border-neutral-200">
         <h2 className="my-4 text-4xl font-bold">Sales</h2>
         <nav className="flex gap-3">

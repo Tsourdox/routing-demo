@@ -14,7 +14,7 @@ export default function RootLayout() {
           <SidebarNavLink to="reports">Reports</SidebarNavLink>
         </nav>
       </aside>
-      <main className="flex-1">
+      <main className="flex flex-col flex-1">
         <Outlet />
       </main>
     </div>
