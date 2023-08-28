@@ -13,6 +13,7 @@ import DashboardPage from './pages/DashboardPage';
 import ExpensesPage from './pages/ExpensesPage';
 import ReportsPage from './pages/ReportsPage';
 import SalesPage from './pages/SalesPage';
+import InvoicePage from './pages/sales/InvoicePage';
 import InvoicesPage from './pages/sales/InvoicesPage';
 
 const router = createBrowserRouter(
@@ -24,7 +25,7 @@ const router = createBrowserRouter(
         <Route index element={<div>Overview</div>} />
         <Route path="subscriptions" element={<div>Subscriptions</div>} />
         <Route path="invoices" element={<InvoicesPage />}>
-          <Route path=":id" element={<div>INVOICE DETAILS</div>} />
+          <Route path=":id" element={<InvoicePage />} />
         </Route>
         <Route path="customers" element={<div>Customers</div>} />
         <Route path="deposits" element={<div>Deposits</div>} />

@@ -6,7 +6,7 @@ interface Invoice {
   price: string;
 }
 
-const mockedInvoices: Invoice[] = [
+export const mockedInvoices: Invoice[] = [
   {
     id: 1234,
     title: 'Santa Monica',
