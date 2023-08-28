@@ -7,7 +7,7 @@ export default function RootLayout() {
         <h1 className="text-2xl font-bold text-green-400">Fakebooks</h1>
 
         <nav className="flex flex-col">
-          <SidebarNavLink to="dashboard">Dashboard</SidebarNavLink>
+          <SidebarNavLink to="">Dashboard</SidebarNavLink>
           <SidebarNavLink to="accounts">Accounts</SidebarNavLink>
           <SidebarNavLink to="sales">Sales</SidebarNavLink>
           <SidebarNavLink to="expenses">Expenses</SidebarNavLink>
